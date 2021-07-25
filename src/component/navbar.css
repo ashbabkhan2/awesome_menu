@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar img{
+    width: 37px;
+}
+.navbar{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 0 10px;
+    padding-top: 10px;
+
+}
+.navbar ul{
+    margin-right: 10px;
+    list-style-type: none;
+}
+#e1,#end-class{
+    color: #fff;
+    font-size: 14px;
+    border-radius: 3px;
+    padding: 9px 12px;
+    background-color: orangered;
+    border: none;
+    cursor: pointer;
+}
+.slider{
+    display: none;
+}
+.navbar1{
+    display: none;
+}
+.hamburger span{
+    display: block;
+}
+.hamburger span{
+    height: 2px;
+    background-color: orangered;
+    margin-bottom: 5px;
+}
+.hamburger .h1{
+    width: 31px;
+}
+.hamburger .h2{
+  width: 22px;
+}
+.hamburger .h3{
+    width: 37px;
+}
+/* modal */
+.modal{
+    display: none;
+    width: 50%;
+    position: fixed;
+    margin: 10px 0;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    margin-bottom: 20px;
+    z-index: 100;
+    /* height: 97vh; */
+    padding: 4rem 3rem;
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+}
+.navbar ul li{
+    margin-left: 10px;
+}
+
+
+/* radio */
+.radio{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    justify-content: space-around;
+}
+.radio div{
+    margin-top: 20px;
+ }
+ /* radio button */
+ .radio div input:checked::after{
+     content: '';
+     background-color: orangered;
+     display: inline-block;
+     position: relative;
+     width: 14px;
+     height: 14px;
+     margin-left: 2px;
+     margin-top: 2px;
+     border-radius: 50%;
+ }
+.radio div input{
+    margin-right: 10px;
+    width: 19px;
+    height: 19px;
+ }
+
+
+
+/* anchors tag */
+.buttons a{
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 30px;
+}
+.a1{
+    padding: 10px 30px;
+    border-radius: 3px;
+    background-color: orangered;
+    color: #fff;
+    margin-right: 10px;
+}
+.a2{
+   padding: 10px 20px;
+   border-radius: 3px;
+   color: #000;
+}
+.a2:hover{
+    color: #fff;
+    background-color: orangered;
+}
+/* backdraw */
+.back-draw,.back-draw-1{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    height: 100vh;
+    display: none;
+    background-color: rgba(0,0,0,0.3);
+}
+/* hidden radio */
+.radio .h_radio{
+    margin-top: 0;
+    margin-left: 40px;
+}
+.demo{
+    color: grey;
+    position: relative;
+    z-index: 200;
+}
+.back-draw-1{
+    display: none;
+}
+
+@media all and (max-width:700px){
+    .navbar{
+        display:none;
+    }
+    .navbar1{
+        display: flex;
+    }
+    .slider{
+        position: fixed;
+        display: block; 
+        z-index: 6;
+        right: 0;
+        display: none;
+        text-align: center;
+        padding:10px;
+        background:linear-gradient(45deg,rgba(255,83,73,1),rgba(255,255,255,1));
+        width: 70%;
+        height: 100vh;
+    }
+    .modal{
+        width: 80%;
+    }
+    #e1{
+      margin-top: 10px;
+    }
+    .demo{
+        margin-top: 20px;
+    }
+    .back-draw-1{
+        display: none;
+        z-index: 5;
+        background-color: rgba(0,0,0,0.4);
+    }
+    
+
+}
+@media all and (max-width:451px){
+    .modal{
+        width: 96%;
+        padding: 4rem 2rem;
+    }
+}
+@media all and (max-width:360px){
+    .modal{
+        width: 97%;
+        padding: 4rem 8px;
+        padding-left: 1rem;
+    }
+}
