@@ -1,0 +1,10 @@
+img{
+    width: 100px;
+}
+.card{
+    padding:10px 20px;
+    box-shadow: 1px 1px 5px 1px rgba(0,0,0,0.3);
+}
+.card:hover{
+    transform: scale(1.05);
+}

@@ -1,0 +1,23 @@
+.posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+.button11{
+    text-align: center;
+    margin-top: 20px;
+}
+.button11 .b1{
+    padding: 8px 15px;
+    background: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    border: 1px solid orangered;
+    outline: none;
+
+}
+.button11 .b1:hover{
+    color: #fff;
+    background-color: orangered;
+}

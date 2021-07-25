@@ -1,5 +1,8 @@
 import React ,{useEffect, useState} from 'react';
 import './navbar.css';
+import { Link } from 'react-router-dom';
+import App from '../App.jsx';
+import Posts from '../Posts.jsx';
 const Navbar = (props) =>{
     const [ischeck,setischeck] = useState(false);
     const [isshow,setisshow] = useState('none');
@@ -106,11 +109,12 @@ const Navbar = (props) =>{
            </div>
            {/* Greater navbar */}
       <div className='navbar'>
-           <div className='brand'>
-               <img src='https://cdn.pixabay.com/photo/2016/08/25/07/30/red-1618916_960_720.png' />
+           <div className='brand'><Link to='/'>
+               <img src='https://cdn.pixabay.com/photo/2016/08/25/07/30/red-1618916_960_720.png' /></Link>
            </div>
            <ul>
                <li className='demo'></li>
+               <li><Link to='/posts'><button className='posted'>Post</button></Link></li>
               <li> <button id='end-class' onClick={show_modal}>End class</button></li>
            </ul>
       </div>
@@ -118,14 +122,15 @@ const Navbar = (props) =>{
       <div className='back-draw-1' onClick={back_draw_1}></div>
        <div className='slider'>
             <div className='demo'></div>
+           <div> <Link to='/posts'><button className='posted'>Post</button></Link></div>
             <button id='e1' onClick={show_modal}>End class</button>          
        </div>
       <div className='navbar1  navbar'>
-           <div className='brand'>
-               <img src='https://cdn.pixabay.com/photo/2016/08/25/07/30/red-1618916_960_720.png' />
+           <div className='brand'><Link to='/'>
+               <img src='https://cdn.pixabay.com/photo/2016/08/25/07/30/red-1618916_960_720.png' /></Link>
            </div>
            <div className='hamburger' onClick={show_navbar}>
-               <span className='h1'></span>
+               <span className='h1'></span>   
                <span className='h2'></span>
                <span className='h3'></span>
            </div>
